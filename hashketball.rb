@@ -77,7 +77,6 @@ def game_hash
           blocks: 7,
           slam_dunks: 2
         },
-        binding.pry
         {
           player_name: "Bismack Biyombo",
           number: 0,
