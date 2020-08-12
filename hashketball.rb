@@ -68,7 +68,6 @@ def game_hash
       players: [
         {
           player_name: "Jeff Adrien",
-          binding.pry
           number: 4,
           shoe: 18,
           points: 10,
@@ -78,6 +77,7 @@ def game_hash
           blocks: 7,
           slam_dunks: 2
         },
+        binding.pry
         {
           player_name: "Bismack Biyombo",
           number: 0,
