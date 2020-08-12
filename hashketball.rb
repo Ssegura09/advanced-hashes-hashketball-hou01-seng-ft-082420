@@ -1,4 +1,4 @@
-# Write your code below game_hash
+require 'pry'
 def game_hash
   {
     home: {
@@ -125,5 +125,15 @@ def game_hash
     }
   }
 end
-
-# Write code here
+#,_place = :home/away, team = team name,attribute = team_name
+def num_points_scored(sought_player_name)
+  game_hash.each do |_place, team|
+    team.each do |attribute, data|
+      binding.pry
+      next unless attribute == :players
+      data.each do |player|
+        return player[:points] if player[:player_name] == sought_player_name
+      end
+    end
+  end
+end
