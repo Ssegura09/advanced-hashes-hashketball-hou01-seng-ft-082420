@@ -125,7 +125,12 @@ def game_hash
     }
   }
 end
-#,_place = :home/away, team = Hash of team_name, attribute = :players, data = has that includes all player data
+
+#_place = :home
+#team = hash of team_name
+#attribute = :players
+#data = has that includes all player data
+
 def num_points_scored(sought_player_name)
   game_hash.each do |_place, team|
     team.each do |attribute, data|
