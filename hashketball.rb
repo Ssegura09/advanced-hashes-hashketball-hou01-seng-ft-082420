@@ -166,7 +166,6 @@ def team_names
 end
 
 def player_numbers (team_name)
-  binding.pry
   nums = []
   game_hash.each do |_place, team|
     next unless team[:team_name] == team_name
