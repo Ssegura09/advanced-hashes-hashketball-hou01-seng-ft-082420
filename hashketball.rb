@@ -166,6 +166,7 @@ def team_names
 end
 
 def player_numbers (team_name)
+  binding.pry
   nums = []
   game_hash.each do |_place, team|
     next unless team[:team_name] == team_name
@@ -186,7 +187,7 @@ def player_stats(sought_player_name)
       next unless attribute == :players
 
       game_hash[place][attribute].each do |player|
-        next unless player[:player_name] = sought_player_name
+        next unless player[:player_name] == sought_player_name
 
         new_hash = player.delete_if do |k, _v|
           k == :player_name
