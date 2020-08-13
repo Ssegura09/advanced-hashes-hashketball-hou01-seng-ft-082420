@@ -71,7 +71,6 @@ def game_hash
           number: 4,
           shoe: 18,
           points: 10,
-          
           rebounds: 1,
           assists: 1,
           steals: 2,
@@ -188,7 +187,7 @@ def player_stats(sought_player_name)
       
 game_hash[place][attribute].each do |player|
   next unless player[:player_name] == sought_player_name
-binding.pry
+  binding.pry
 new_hash = player.delete_if do |k, _v|
     k == :player_name
         end
